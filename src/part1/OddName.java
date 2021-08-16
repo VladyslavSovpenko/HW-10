@@ -31,7 +31,6 @@ public class OddName {
         for (int i = 0; i < list.size(); i++) {
             text = text + a + "." + " " + list.get(i) + ", ";
             a += 2;
-
         }
         return text;
     }
