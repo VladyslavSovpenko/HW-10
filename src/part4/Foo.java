@@ -29,7 +29,7 @@ public class Foo {
         Stream.iterate(bigSeed, (BigInteger x) -> {
                     BigInteger xNext = bigA.multiply(x).add(bigC).mod(bigM);
                     if (xNext.compareTo(maxLong) > 0) {
-                        xNext = xNext.shiftRight(16);//use bits higher then 16
+                        xNext = xNext.shiftRight(16);
                     }
                     return xNext;
                 }

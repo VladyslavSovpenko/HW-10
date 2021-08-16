@@ -21,7 +21,6 @@ public class NewArray {
 
         List<String> collect = zip(first, second).collect(Collectors.toList());
         System.out.println(collect);
-
     }
 
     public static <T> Stream<T> zip(Stream<T> first, Stream<T> second) {

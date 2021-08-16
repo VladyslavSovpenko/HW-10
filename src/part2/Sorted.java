@@ -1,8 +1,9 @@
 package part2;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Stream;
+
 /*Метод принимает на вход список из строк (можно список из Задания 1).
 Возвращает список этих строк в верхнем регистре и отсортированные по убыванию (от Z до А).*/
 
@@ -17,7 +18,7 @@ public class Sorted {
 
         namesList.stream().
                 map(s -> (s.toUpperCase())).
-                sorted().
+                sorted(Comparator.reverseOrder()).
                 forEach(s -> System.out.println(s));
     }
 
